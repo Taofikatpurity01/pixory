@@ -22,7 +22,7 @@ export default function Pixory() {
           className="object-cover opacity-90"
         />
       </div>
-      <div className="absolute inset-0 z-10 flex justify-between px-6 md:px-16">
+      <div className="absolute inset-0 z-10 md:flex justify-between px-6 md:px-16 hidden ">
         {[...Array(5)].map((_, index) => (
           <div key={index} className="relative h-full mt-28">
             {/* Vertical Line */}
@@ -90,9 +90,9 @@ export default function Pixory() {
       </header>
 
       {/* Hero Content */}
-      <div className=" relative flex min-h-screen flex-col justify-center px-5 py-12 sm:px-8 md:px-12 lg:px-16 xs:py-0">
+      <div className=" relative flex min-h-screen flex-col justify-center px-5 py-12 xs:px-8 md:px-12 lg:px-16">
         {/* Floating Card */}
-        <div className="mb-8 w-full max-w-xs sm:max-w-sm md:max-w-80 rounded-[10px] border border-white/20 bg-white/10 p-4  ml-4  backdrop-blur-md">
+        <div className="mb-8 w-full max-w-xs sm:max-w-sm md:max-w-80 rounded-[10px] border border-white/20 bg-white/10 p-4  md:ml-4  ml-1 backdrop-blur-md">
           <p className="text-[15px] uppercase leading-6 tracking-widest text-[#ffffff] [font-family:var(--font-roboto-mono)] font-normal">
             A powerful WEB3 infrastructure that allows you to create, trade, and
             manage digital assets with full transparency and security.
