@@ -90,7 +90,7 @@ export default function Pixory() {
       </header>
 
       {/* Hero Content */}
-      <div className=" relative flex min-h-screen flex-col justify-center px-5 py-12 sm:px-8 md:px-12 lg:px-16 xs-py-2">
+      <div className=" relative flex min-h-screen flex-col justify-center px-5 py-12 sm:px-8 md:px-12 lg:px-16 xs:py-0">
         {/* Floating Card */}
         <div className="mb-8 w-full max-w-xs sm:max-w-sm md:max-w-80 rounded-[10px] border border-white/20 bg-white/10 p-4  ml-4  backdrop-blur-md">
           <p className="text-[15px] uppercase leading-6 tracking-widest text-[#ffffff] [font-family:var(--font-roboto-mono)] font-normal">
