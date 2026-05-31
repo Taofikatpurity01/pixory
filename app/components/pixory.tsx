@@ -90,7 +90,7 @@ export default function Pixory() {
       </header>
 
       {/* Hero Content */}
-      <div className=" relative flex min-h-screen flex-col justify-center px-5 py-12 sm:px-8 md:px-12 lg:px-16">
+      <div className=" relative flex min-h-screen flex-col justify-center px-5 py-12 sm:px-8 md:px-12 lg:px-16 xs-py-2">
         {/* Floating Card */}
         <div className="mb-8 w-full max-w-xs sm:max-w-sm md:max-w-80 rounded-[10px] border border-white/20 bg-white/10 p-4  ml-4  backdrop-blur-md">
           <p className="text-[15px] uppercase leading-6 tracking-widest text-[#ffffff] [font-family:var(--font-roboto-mono)] font-normal">
@@ -128,7 +128,7 @@ export default function Pixory() {
           </div>
         </div>
         {/* Top Right Text */}
-        <div className="mt-6 md:absolute md:right-20  xs:top-40 md:top-20 text-xs sm:text-sm tracking-wide text-white ">
+        <div className="mt-6 md:absolute md:right-20   md:top-20 text-xs sm:text-sm tracking-wide text-white ">
           <div className="flex items-center gap-1">
             <FaRegCirclePlay />
             <div className="flex text-[14px] font-normal gap-4 [font-family:var(--font-roboto-mono)]">
