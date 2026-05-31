@@ -22,6 +22,19 @@ export default function Pixory() {
           className="object-cover opacity-90"
         />
       </div>
+      <div className="absolute inset-0 z-10 flex justify-between px-6 md:px-16">
+        {[...Array(5)].map((_, index) => (
+          <div key={index} className="relative h-full mt-28">
+            {/* Vertical Line */}
+            <div className="h-full w-px bg-white/20" />
+
+            {/* Plus Sign */}
+            <span className="absolute left-1/2 top-[25%] -translate-x-1/2 -translate-y-1/2 text-white/50">
+              +
+            </span>
+          </div>
+        ))}
+      </div>
 
       {/* Navbar */}
       <header className="relative z-20 px-6 py-6 md:px-16">
@@ -30,7 +43,7 @@ export default function Pixory() {
           <Image src={logo} alt="Pixory Logo" width={38} height={38} />
 
           {/* Desktop Nav */}
-          <nav className="hidden md:flex items-center gap-8 text-sm uppercase [font-family:var(--font-roboto-mono)]">
+          <nav className="hidden md:flex items-center gap-8 text-[16px]  font-normal uppercase [font-family:var(--font-roboto-mono)]">
             <a href="#">Home</a>
             <a href="#">Community</a>
             <a href="#">About</a>
@@ -38,7 +51,7 @@ export default function Pixory() {
           </nav>
 
           {/* Desktop Button */}
-          <button className="hidden md:block rounded-full bg-white px-14 py-6 text-black [font-family:var(--font-inter)]">
+          <button className="hidden md:block rounded-full bg-white px-20 py-6 text-black font-light [font-family:var(--font-inter)]">
             Sign In
           </button>
 
@@ -53,7 +66,7 @@ export default function Pixory() {
 
         {/* Mobile Menu */}
         {isOpen && (
-          <div className="absolute left-0 top-full w-full bg-black/95 backdrop-blur-md p-6 md:hidden">
+          <div className="absolute left-0 top-full w-full bg-black/95 backdrop-blur-md p-6 md:hidden font-normal">
             <nav className="flex flex-col gap-6 text-center uppercase [font-family:var(--font-roboto-mono)]">
               <a href="#" onClick={() => setIsOpen(false)}>
                 Home
@@ -79,7 +92,7 @@ export default function Pixory() {
       {/* Hero Content */}
       <div className=" relative flex min-h-screen flex-col justify-center px-5 py-12 sm:px-8 md:px-12 lg:px-16">
         {/* Floating Card */}
-        <div className="mb-8 w-full max-w-xs sm:max-w-sm md:max-w-80 rounded-[10px] border border-white/20 bg-white/10 p-4    backdrop-blur-md">
+        <div className="mb-8 w-full max-w-xs sm:max-w-sm md:max-w-80 rounded-[10px] border border-white/20 bg-white/10 p-4  ml-4  backdrop-blur-md">
           <p className="text-[15px] uppercase leading-6 tracking-widest text-[#ffffff] [font-family:var(--font-roboto-mono)] font-normal">
             A powerful WEB3 infrastructure that allows you to create, trade, and
             manage digital assets with full transparency and security.
@@ -102,7 +115,7 @@ export default function Pixory() {
                 experiences for the future of the internet.
               </p>
               <div className="">
-                <button className="rounded-full bg-white px-6  py-3  sm:px-8 sm:py-4  md:px-10  md:py-5  text-sm  md:text-base  text-[#090A0D]  transition  hover:bg-gray-200  [font-family:var(--font-inter)]">
+                <button className="rounded-full bg-white px-6  py-3  sm:px-8 sm:py-4  md:px-20 font-light  md:py-6  text-sm  md:text-base  text-[#090A0D]  transition  hover:bg-gray-200  [font-family:var(--font-inter)]">
                   Connect Wallet
                 </button>
               </div>
@@ -115,10 +128,10 @@ export default function Pixory() {
           </div>
         </div>
         {/* Top Right Text */}
-        <div className="mt-6 md:absolute md:right-10 md:top-20 text-xs sm:text-sm tracking-wide text-white ">
-          <div className="flex items-center gap-2">
+        <div className="mt-6 md:absolute md:right-20  xs:top-40 md:top-20 text-xs sm:text-sm tracking-wide text-white ">
+          <div className="flex items-center gap-1">
             <FaRegCirclePlay />
-            <div className="flex gap-4 [font-family:var(--font-roboto-mono)]">
+            <div className="flex text-[14px] font-normal gap-4 [font-family:var(--font-roboto-mono)]">
               <p>Fast. </p>
               <p> Secure.</p>
               <p> Permissionless.</p>
